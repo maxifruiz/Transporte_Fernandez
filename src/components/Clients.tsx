@@ -9,7 +9,6 @@ const clients = [
   { name: 'TSD Catering', image: `${basePath}cliente4.jpeg` },
 ];
 
-// Triplicamos para lograr efecto de carrusel infinito
 const duplicatedClients = [...clients, ...clients, ...clients];
 
 const Clients = () => {
@@ -23,17 +22,17 @@ const Clients = () => {
         </div>
 
         {/* Carrusel scroll infinito */}
-        <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-x-auto">
           <div className="flex gap-4 sm:gap-6 md:gap-8 items-center animate-scroll whitespace-nowrap">
             {duplicatedClients.map((client, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center w-32 sm:w-40 md:w-48 aspect-[3/2] bg-gray-100 rounded-xl shadow-md px-2 sm:px-4 py-2 transition-transform duration-300 hover:scale-105"
+                className="flex items-center justify-center min-h-[4rem] h-24 min-w-[5rem] sm:h-28 sm:w-36 md:w-44 bg-gray-100 rounded-xl shadow-md px-2 sm:px-4 py-2 transition-transform duration-300 hover:scale-105"
               >
                 <img
                   src={client.image}
                   alt={client.name}
-                  className="w-full h-full object-contain"
+                  className="max-h-16 sm:max-h-20 w-auto object-contain"
                   loading="lazy"
                 />
               </div>
@@ -63,6 +62,4 @@ const Clients = () => {
 };
 
 export default Clients;
-
-
 
