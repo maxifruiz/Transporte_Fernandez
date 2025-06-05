@@ -24,16 +24,16 @@ const Clients = () => {
 
         {/* Carrusel scroll infinito */}
         <div className="relative w-full overflow-hidden">
-          <div className="flex gap-6 sm:gap-8 items-center animate-scroll whitespace-nowrap">
+          <div className="flex gap-4 sm:gap-6 md:gap-8 items-center animate-scroll whitespace-nowrap">
             {duplicatedClients.map((client, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center h-20 w-32 sm:h-28 sm:w-44 md:w-52 bg-gray-100 rounded-xl shadow-md px-3 py-2 transition-transform duration-300 hover:scale-105"
+                className="flex items-center justify-center h-24 w-32 sm:h-28 sm:w-40 md:h-28 md:w-48 bg-gray-100 rounded-xl shadow-md px-2 sm:px-4 py-2 transition-transform duration-300 hover:scale-105"
               >
                 <img
                   src={client.image}
                   alt={client.name}
-                  className="max-h-16 sm:max-h-20 w-auto object-contain"
+                  className="h-full w-full object-contain"
                   loading="lazy"
                 />
               </div>
