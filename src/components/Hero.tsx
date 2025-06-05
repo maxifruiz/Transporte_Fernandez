@@ -4,13 +4,15 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectFade } from 'swiper/modules';
 
 const Hero = () => {
   const images = [
-    '/src/assets/1000695415.jpg',
-    '/src/assets/1000695416.jpg',
-    '/src/assets/1000695418.jpg',
-    '/src/assets/1000695419.jpg'
+    '/1000695415.jpg',
+    '/1000695416.jpg',
+    '/1000695418.jpg',
+    '/1000695419.jpg'
   ];
 
   const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {

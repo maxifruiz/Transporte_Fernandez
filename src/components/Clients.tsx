@@ -1,10 +1,10 @@
-import React from 'react';
+// src/components/Clients.tsx
 
 const clients = [
-  { name: 'Grupo Gala Catering', image: 'import.meta.env.BASE_URL + 'cliente1.jpg'' },
-  { name: 'Easy Cook Servicios Gastronómicos', image: 'import.meta.env.BASE_URL + 'cliente2.jpg'' },
-  { name: 'Wüla Comida con Carácter', image: 'import.meta.env.BASE_URL + 'cliente3.jpg'' },
-  { name: 'Green & Co', image: 'import.meta.env.BASE_URL + 'cliente4.jpg'' }
+  { name: 'Grupo Gala Catering', image: '/cliente1.jpg' },
+  { name: 'Easy Cook Servicios Gastronómicos', image: '/cliente2.jpg' },
+  { name: 'Wüla Comida con Carácter', image: '/cliente3.jpg' },
+  { name: 'TSD Catering', image: '/cliente4.jpg' },
 ];
 
 // Triplicamos para que nunca se vea vacío
@@ -60,5 +60,3 @@ const Clients = () => {
 };
 
 export default Clients;
-
-

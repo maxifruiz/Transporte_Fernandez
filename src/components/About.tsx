@@ -14,9 +14,9 @@ const About = () => {
           <div className="md:w-1/2">
             <div className="relative group">
               <div className="bg-gray-200 rounded-lg overflow-hidden transition-transform duration-500 transform group-hover:scale-[1.02]">
-                {/* Placeholder for customer image */}
+                {/* ✅ Usar ruta dinámica compatible con Vite y GitHub Pages */}
                 <img
-                  src="/src/assets/1000695413.jpg"
+                  src={`${import.meta.env.BASE_URL}1000695413.jpg`}
                   alt="Vehículo de transporte de Transporte Fernandez"
                   className="w-full h-auto object-cover max-h-[400px]"
                   style={{ filter: 'none' }}
@@ -86,3 +86,4 @@ const About = () => {
 };
 
 export default About;
+
