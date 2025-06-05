@@ -3,10 +3,10 @@ import React from 'react';
 const basePath = import.meta.env.BASE_URL;
 
 const clients = [
-  { name: 'Grupo Gala Catering', image: `${basePath}cliente1.jpg` },
-  { name: 'Easy Cook Servicios Gastronómicos', image: `${basePath}cliente2.jpg` },
-  { name: 'Wüla Comida con Carácter', image: `${basePath}cliente3.jpg` },
-  { name: 'TSD Catering', image: `${basePath}cliente4.jpg` },
+  { name: 'Grupo Gala Catering', image: `${basePath}cliente1.jpeg` },
+  { name: 'Easy Cook Servicios Gastronómicos', image: `${basePath}cliente2.png` },
+  { name: 'Wüla Comida con Carácter', image: `${basePath}cliente3.png` },
+  { name: 'TSD Catering', image: `${basePath}cliente4.jpeg` },
 ];
 
 // Triplicamos para lograr efecto de carrusel infinito
@@ -63,6 +63,4 @@ const Clients = () => {
 };
 
 export default Clients;
-
-
 
