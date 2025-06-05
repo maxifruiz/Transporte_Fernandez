@@ -28,12 +28,12 @@ const Clients = () => {
             {duplicatedClients.map((client, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center h-24 w-32 sm:h-28 sm:w-40 md:h-28 md:w-48 bg-gray-100 rounded-xl shadow-md px-2 sm:px-4 py-2 transition-transform duration-300 hover:scale-105"
+                className="flex items-center justify-center w-32 sm:w-40 md:w-48 aspect-[3/2] bg-gray-100 rounded-xl shadow-md px-2 sm:px-4 py-2 transition-transform duration-300 hover:scale-105"
               >
                 <img
                   src={client.image}
                   alt={client.name}
-                  className="h-full w-full object-contain"
+                  className="w-full h-full object-contain"
                   loading="lazy"
                 />
               </div>
@@ -63,5 +63,6 @@ const Clients = () => {
 };
 
 export default Clients;
+
 
 
