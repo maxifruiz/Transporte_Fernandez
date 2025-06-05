@@ -6,11 +6,12 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/autoplay';
 
 const Hero = () => {
+  const basePath = import.meta.env.BASE_URL;
   const images = [
-    '/1000695415.jpg',
-    '/1000695416.jpg',
-    '/1000695418.jpg',
-    '/1000695419.jpg'
+    `${basePath}1000695415.jpg`,
+    `${basePath}1000695416.jpg`,
+    `${basePath}1000695418.jpg`,
+    `${basePath}1000695419.jpg`
   ];
 
   const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
