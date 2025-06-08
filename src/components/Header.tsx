@@ -36,9 +36,9 @@ const Header = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
           <img
-            src={`${import.meta.env.BASE_URL}logo.png`}
+            src={`${import.meta.env.BASE_URL}${scrolled ? 'logo-negro.png' : 'logo-blanco.png'}`}
             alt="Logo Transporte Fernandez"
-            className="w-8 h-8 max-w-[32px] max-h-[32px] object-contain mr-2 shrink-0"
+            className="w-10 h-10 max-w-[40px] max-h-[40px] object-contain mr-2 shrink-0 transition-all duration-300"
           />
           <span className={`text-xl font-bold ${scrolled ? 'text-black' : 'text-white'}`}>
             Transporte Fernandez
@@ -105,3 +105,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
