@@ -14,27 +14,25 @@ const About = () => {
           <div className="md:w-1/2">
             <div className="relative group">
               <div className="bg-gray-200 rounded-lg overflow-hidden transition-transform duration-500 transform group-hover:scale-[1.02]">
-                {/* Placeholder for customer image */}
+                {/* ✅ Usar ruta dinámica compatible con Vite y GitHub Pages */}
                 <img
-                  src="/src/assets/1000695413.jpg"
+                  src={`${import.meta.env.BASE_URL}1000695413.jpg`}
                   alt="Vehículo de transporte de Transporte Fernandez"
                   className="w-full h-auto object-cover max-h-[400px]"
                   style={{ filter: 'none' }}
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-black text-white p-4 rounded-lg transform transition-transform duration-500 group-hover:translate-x-2 group-hover:-translate-y-2">
-                <p className="font-bold text-xl">+4 años</p>
-                <p>de experiencia</p>
-              </div>
+              {/* 🔴 Cartel "+4 años" eliminado */}
             </div>
           </div>
 
           <div className="md:w-1/2">
             <h3 className="text-2xl font-bold mb-6">Nuestra Historia</h3>
             <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-              Transporte Fernandez cuenta con más de 4 años de experiencia transportando todo tipo de productos congelados. 
-              Estamos comprometidos a entregar con puntualidad, cuidado y confiabilidad para satisfacer las necesidades 
-              tanto de vendedores como de compradores en Capital y GBA.
+              Desde 2021 en Transporte Fernandez nos dedicamos a transportar todo tipo
+              de productos congelados. Estamos comprometidos a entregar con puntualidad,
+              cuidado y confiabilidad para satisfacer las necesidades de nuestros
+              clientes en zona de AMBA.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -86,3 +84,5 @@ const About = () => {
 };
 
 export default About;
+
+

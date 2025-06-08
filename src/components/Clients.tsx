@@ -1,10 +1,12 @@
 import React from 'react';
 
+const basePath = import.meta.env.BASE_URL;
+
 const clients = [
-  { name: 'Grupo Gala Catering', image: '/cliente1.jpg.jpeg' },
-  { name: 'Easy Cook Servicios Gastronómicos', image: '/cliente2.jpg.png' },
-  { name: 'Wüla Comida con Carácter', image: '/cliente3.jpg.png' },
-  { name: 'Green & Co', image: '/cliente4-jpg.jpeg' }
+  { name: 'Grupo Gala Catering', image: `${basePath}cliente1.jpeg` },
+  { name: 'Easy Cook Servicios Gastronómicos', image: `${basePath}cliente2.png` },
+  { name: 'Wüla Comida con Carácter', image: `${basePath}cliente3.png` },
+  { name: 'TSD Catering', image: `${basePath}cliente4.jpeg` }
 ];
 
 // Triplicamos para que nunca se vea vacío
@@ -31,7 +33,7 @@ const Clients = () => {
                 <img
                   src={client.image}
                   alt={client.name}
-                  className="max-h-20 w-auto object-contain"
+                  className="h-full max-h-20 w-auto object-contain"
                 />
               </div>
             ))}

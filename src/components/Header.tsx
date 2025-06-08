@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Truck } from 'lucide-react';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,68 +30,38 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white shadow-md py-2'
-          : 'bg-transparent py-4'
+        scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Truck className={`h-8 w-8 mr-2 ${scrolled ? 'text-black' : 'text-white'}`} />
+          <img
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt="Logo Transporte Fernandez"
+            className="w-8 h-8 max-w-[32px] max-h-[32px] object-contain mr-2 shrink-0"
+          />
           <span className={`text-xl font-bold ${scrolled ? 'text-black' : 'text-white'}`}>
-            Transporte Fernández
+            Transporte Fernandez
           </span>
         </div>
+
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
-            <li>
-              <a
-                href="#inicio"
-                onClick={(e) => handleNavClick(e, 'inicio')}
-                className={`${scrolled ? 'text-black' : 'text-white'} hover:text-gray-300 transition-colors`}
-              >
-                Inicio
-              </a>
-            </li>
-            <li>
-              <a
-                href="#nosotros"
-                onClick={(e) => handleNavClick(e, 'nosotros')}
-                className={`${scrolled ? 'text-black' : 'text-white'} hover:text-gray-300 transition-colors`}
-              >
-                Nosotros
-              </a>
-            </li>
-            <li>
-              <a
-                href="#servicios"
-                onClick={(e) => handleNavClick(e, 'servicios')}
-                className={`${scrolled ? 'text-black' : 'text-white'} hover:text-gray-300 transition-colors`}
-              >
-                Servicios
-              </a>
-            </li>
-            <li>
-              <a
-                href="#clientes"
-                onClick={(e) => handleNavClick(e, 'clientes')}
-                className={`${scrolled ? 'text-black' : 'text-white'} hover:text-gray-300 transition-colors`}
-              >
-                Clientes
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contacto"
-                onClick={(e) => handleNavClick(e, 'contacto')}
-                className={`${scrolled ? 'text-black' : 'text-white'} hover:text-gray-300 transition-colors`}
-              >
-                Contacto
-              </a>
-            </li>
+            {['inicio', 'nosotros', 'servicios', 'clientes', 'contacto'].map((item) => (
+              <li key={item}>
+                <a
+                  href={`#${item}`}
+                  onClick={(e) => handleNavClick(e, item)}
+                  className={`${scrolled ? 'text-black' : 'text-white'} hover:text-gray-300 transition-colors`}
+                >
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
-        <button 
+
+        <button
           className={`md:hidden ${scrolled ? 'text-black' : 'text-white'}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Menu"
@@ -108,61 +77,26 @@ const Header = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              d={mobileMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
             />
           </svg>
         </button>
       </div>
-      
-      {/* Mobile menu */}
+
       {mobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg animate-fadeIn">
           <ul className="py-2 px-4">
-            <li className="py-2">
-              <a
-                href="#inicio"
-                onClick={(e) => handleNavClick(e, 'inicio')}
-                className="block text-black hover:text-gray-600 transition-colors"
-              >
-                Inicio
-              </a>
-            </li>
-            <li className="py-2">
-              <a
-                href="#nosotros"
-                onClick={(e) => handleNavClick(e, 'nosotros')}
-                className="block text-black hover:text-gray-600 transition-colors"
-              >
-                Nosotros
-              </a>
-            </li>
-            <li className="py-2">
-              <a
-                href="#servicios"
-                onClick={(e) => handleNavClick(e, 'servicios')}
-                className="block text-black hover:text-gray-600 transition-colors"
-              >
-                Servicios
-              </a>
-            </li>
-            <li className="py-2">
-              <a
-                href="#clientes"
-                onClick={(e) => handleNavClick(e, 'clientes')}
-                className="block text-black hover:text-gray-600 transition-colors"
-              >
-                Clientes
-              </a>
-            </li>
-            <li className="py-2">
-              <a
-                href="#contacto"
-                onClick={(e) => handleNavClick(e, 'contacto')}
-                className="block text-black hover:text-gray-600 transition-colors"
-              >
-                Contacto
-              </a>
-            </li>
+            {['inicio', 'nosotros', 'servicios', 'clientes', 'contacto'].map((item) => (
+              <li key={item} className="py-2">
+                <a
+                  href={`#${item}`}
+                  onClick={(e) => handleNavClick(e, item)}
+                  className="block text-black hover:text-gray-600 transition-colors"
+                >
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       )}

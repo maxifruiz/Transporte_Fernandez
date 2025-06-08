@@ -15,7 +15,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
     console.log('Form submitted:', formData);
     alert('Gracias por tu mensaje. Te contactaremos pronto.');
     setFormData({ name: '', email: '', message: '' });
@@ -101,7 +100,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">WhatsApp</h4>
                     <a
-                      href="https://wa.me/01159099652"
+                      href="https://wa.me/5491159099652"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-600 hover:text-black transition-colors"
@@ -133,14 +132,14 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Ubicación</h4>
                     <p className="text-gray-600">Morón, Zona Oeste</p>
-                    <p className="text-gray-600">Cobertura: Capital y GBA</p>
+                    <p className="text-gray-600">Cobertura: AMBA</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8">
                 <a
-                  href="https://wa.me/01159099652"
+                  href="https://wa.me/5491159099652"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-300 text-center transform hover:scale-[1.02]"
