@@ -1,5 +1,5 @@
 import React from 'react';
-import { Truck, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-6 md:mb-0">
-            <Truck className="h-8 w-8 mr-2" />
+            <img src="/logo-blanco.png" alt="Logo Transporte Fernández" className="h-10 w-auto mr-2" />
             <span className="text-xl font-bold">Transporte Fernández</span>
           </div>
 

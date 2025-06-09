@@ -32,7 +32,7 @@ const About = () => {
               Desde 2021 en Transporte Fernandez nos dedicamos a transportar todo tipo
               de productos congelados. Estamos comprometidos a entregar con puntualidad,
               cuidado y confiabilidad para satisfacer las necesidades de nuestros
-              clientes en zona de AMBA.
+              clientes en zona del AMBA.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -72,7 +72,7 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Cobertura</h4>
-                  <p className="text-gray-600">Capital y GBA</p>
+                  <p className="text-gray-600">AMBA</p>
                 </div>
               </div>
             </div>
