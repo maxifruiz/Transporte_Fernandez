@@ -100,12 +100,12 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">WhatsApp</h4>
                     <a
-                      href="https://wa.me/5491159099652"
+                      href="https://wa.me/5491172226999"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-600 hover:text-black transition-colors"
                     >
-                      01159099652
+                      01172226999
                     </a>
                   </div>
                 </div>
@@ -117,10 +117,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
                     <a
-                      href="mailto:fernandezmatias649@gmail.com"
+                      href="mailto:Transportefernandez2021@gmail.com"
                       className="text-gray-600 hover:text-black transition-colors"
                     >
-                      fernandezmatias649@gmail.com
+                      Transportefernandez2021@gmail.com
                     </a>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ const Contact = () => {
 
               <div className="mt-8">
                 <a
-                  href="https://wa.me/5491159099652"
+                  href="https://wa.me/5491172226999"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-300 text-center transform hover:scale-[1.02]"
