@@ -100,7 +100,7 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold mb-1">WhatsApp</h4>
                     <a
-                      href="https://wa.me/5491172226999"
+                      href="https://wa.me/5491159099652"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-600 hover:text-black transition-colors"
@@ -139,7 +139,7 @@ const Contact = () => {
 
               <div className="mt-8">
                 <a
-                  href="https://wa.me/5491172226999"
+                  href="https://wa.me/5491159099652"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition-all duration-300 text-center transform hover:scale-[1.02]"
