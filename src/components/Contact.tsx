@@ -105,7 +105,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="text-gray-600 hover:text-black transition-colors"
                     >
-                      01172226999
+                      01159099652
                     </a>
                   </div>
                 </div>
